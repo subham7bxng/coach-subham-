@@ -2,17 +2,48 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PLACEHOLDER"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-PLACEHOLDER');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description"
-        content="Coach Subham - Transform your body with expert fitness boxing, fat loss programs, and strength training. 3+ years of professional coaching experience.">
+        content="Coach Subham - Best Fitness Boxing & Fat Loss Coach in Mumbai & Pune. Transform your body with expert programs designed for real results. Book your free session now!">
     <meta name="keywords"
-        content="fitness coach, boxing trainer, fat loss, strength training, personal trainer, gym coach">
-    <title>Coach Subham | Elite Fitness & Boxing Coach</title>
+        content="fitness coach mumbai, boxing trainer pune, fat loss mumbai, personal trainer pune, boxing for fat loss, coach subham, fitness boxing india, body transformation coach">
+    <title>Coach Subham | Best Fitness Boxing & Fat Loss Coach in Mumbai & Pune</title>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://coachsubham.com/">
+    <meta property="og:title" content="Coach Subham | Expert Fitness Boxing & Fat Loss in Mumbai & Pune">
+    <meta property="og:description"
+        content="Expert Fitness Boxing, Fat Loss, and Strength Training programs in Mumbai & Pune. Real results, starting today.">
+    <meta property="og:image" content="https://coachsubham.com/aN4oEJen5ac4idj6W9SfMS.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://coachsubham.com/">
+    <meta property="twitter:title" content="Coach Subham | Best Fitness Boxing Coach in Mumbai & Pune">
+    <meta property="twitter:description"
+        content="Transform your body with expert Fitness Boxing and Fat Loss programs in Mumbai & Pune.">
+    <meta property="twitter:image" content="https://coachsubham.com/aN4oEJen5ac4idj6W9SfMS.jpg">
+
+    <link rel="canonical" href="https://coachsubham.com/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet">
+    </noscript>
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥊</text></svg>">
     <link rel="stylesheet" href="style.css">
@@ -112,7 +143,8 @@
                 <div class="hero-image-wrapper">
                     <div class="hero-image-glow"></div>
                     <div class="hero-image">
-                        <img src="assets/images/hero-athlete.png" class="hero-img-3d" alt="Fitness Coach Athlete">
+                        <img src="aN4oEJen5ac4idj6W9SfMS.jpg" class="hero-img-3d" alt="Fitness Coach Athlete"
+                            fetchpriority="high">
                     </div>
                     <div class="floating-card card-1">
                         <span class="card-icon">⚡</span>
@@ -129,6 +161,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
         <div class="scroll-indicator">
@@ -144,10 +177,9 @@
                 <div class="about-image" data-animate="fade-right">
                     <div class="image-frame">
                         <div class="frame-decoration"></div>
-                        <div class="about-img-placeholder">
-                            <span class="placeholder-icon">👤</span>
-                            <span>Your Coach</span>
-                        </div>
+                        <img src="WhatsApp%20Image%202026-02-18%20at%202.07.39%20PM.jpeg"
+                            alt="Coach Subham - Professional Boxing and Fitness Trainer" class="about-img"
+                            loading="lazy">
                     </div>
                     <div class="experience-badge">
                         <span class="exp-number">3+</span>
@@ -308,55 +340,30 @@
                     </svg>
                 </button>
                 <div class="gallery-grid" id="galleryGrid">
-                    <div class="gallery-item item-1" data-animate="fade-up" data-delay="0">
-                        <img src="gallery/1.jpg" class="gallery-image" alt="Boxing Drills"
-                            onerror="this.style.display='none'">
-                        <div class="gallery-image-placeholder">
-                            <span class="gallery-icon">🥊</span>
-                        </div>
-                        <span class="gallery-label-overlay">Boxing Drills</span>
+                    <div class="gallery-item item-1 video-item" data-animate="fade-up" data-delay="0">
+                        <video class="gallery-video" autoplay loop muted playsinline>
+                            <source src="YouCut_20260203_211636607.mp4" type="video/mp4">
+                        </video>
                     </div>
-                    <div class="gallery-item item-2" data-animate="fade-up" data-delay="100">
-                        <img src="gallery/2.jpg" class="gallery-image" alt="HIIT Session"
-                            onerror="this.style.display='none'">
-                        <div class="gallery-image-placeholder">
-                            <span class="gallery-icon">🔥</span>
-                        </div>
-                        <span class="gallery-label-overlay">HIIT Session</span>
+                    <div class="gallery-item item-2 video-item" data-animate="fade-up" data-delay="100">
+                        <video class="gallery-video" autoplay loop muted playsinline>
+                            <source src="YouCut_20260218_192208680.mp4" type="video/mp4">
+                        </video>
                     </div>
-                    <div class="gallery-item item-3" data-animate="fade-up" data-delay="200">
-                        <img src="gallery/3.jpg" class="gallery-image" alt="Strength Training"
-                            onerror="this.style.display='none'">
-                        <div class="gallery-image-placeholder">
-                            <span class="gallery-icon">💪</span>
-                        </div>
-                        <span class="gallery-label-overlay">Strength Training</span>
+                    <div class="gallery-item item-3 video-item" data-animate="fade-up" data-delay="200">
+                        <video class="gallery-video" autoplay loop muted playsinline>
+                            <source src="YouCut_20260218_192510220.mp4" type="video/mp4">
+                        </video>
                     </div>
-                    <div class="gallery-item item-4" data-animate="fade-up" data-delay="300">
-                        <img src="gallery/4.jpg" class="gallery-image" alt="Group Class"
-                            onerror="this.style.display='none'">
-                        <div class="gallery-image-placeholder">
-                            <span class="gallery-icon">👥</span>
-                        </div>
-                        <span class="gallery-label-overlay">Group Class</span>
+                    <div class="gallery-item item-4 video-item align-bottom" data-animate="fade-up" data-delay="300">
+                        <video class="gallery-video" autoplay loop muted playsinline>
+                            <source src="YouCut_20260218_193721484.mp4" type="video/mp4">
+                        </video>
                     </div>
-                    <div class="gallery-item item-5" data-animate="fade-up" data-delay="400">
-                        <img src="gallery/5.jpg" class="gallery-image" alt="Client Success"
-                            onerror="this.style.display='none'">
-                        <div class="gallery-image-placeholder">
-                            <span class="gallery-icon">🏆</span>
-                        </div>
-                        <span class="gallery-label-overlay">Client Success</span>
-                    </div>
-                    <div class="gallery-item item-6" data-animate="fade-up" data-delay="500">
-                        <div class="image-wrapper"> <!-- Placeholder wrapper for layout -->
-                            <img src="gallery/6.jpg" class="gallery-image" alt="Cool Down"
-                                onerror="this.style.display='none'">
-                        </div>
-                        <div class="gallery-image-placeholder">
-                            <span class="gallery-icon">🧘</span>
-                        </div>
-                        <span class="gallery-label-overlay">Cool Down</span>
+                    <div class="gallery-item item-5 video-item" data-animate="fade-up" data-delay="400">
+                        <video class="gallery-video" autoplay loop muted playsinline>
+                            <source src="YouCut_20260218_191848592.mp4" type="video/mp4">
+                        </video>
                     </div>
                 </div>
                 <button class="gallery-btn next" id="galleryNext" aria-label="Next">
@@ -381,42 +388,54 @@
                 <div class="testimonial-card">
                     <div class="testimonial-rating">★★★★★</div>
                     <p class="testimonial-text">
-                        "Coach Subham completely changed my life. I lost 20kg and gained so much confidence. His boxing
-                        sessions are intense but so much fun. Best decision I ever made!"
+                        “Subham completely changed my life. I gained 5kg through his strength training program and
+                        built real, visible muscle.His strength trainingsessions are intense, disciplined, and push you
+                        past your limits. Best decision I ever made.”
                     </p>
                     <div class="testimonial-author">
-                        <div class="author-avatar">R</div>
+                        <div class="author-avatar">
+                            <img src="Screenshot_20260218_212858.jpg" alt="Client Nutan Devadiga - Success Story"
+                                loading="lazy">
+                        </div>
                         <div class="author-info">
-                            <h4>Rajesh Kumar</h4>
-                            <span>Lost 20kg in 4 months</span>
+                            <h4>Nutan Devadiga</h4>
+                            <span>Gained 5kg in 3 months</span>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card">
                     <div class="testimonial-rating">★★★★★</div>
                     <p class="testimonial-text">
-                        "I was skeptical at first, but the results speak for themselves. Coach Subham's strength
-                        training program helped me build muscle I never thought possible. Highly recommend!"
+                        “Training with Subham was honestly the best decision I made for my health. I lost 10kg in 6
+                        months, and for the first time it felt sustainable. No crash dieting, no shortcuts — just
+                        consistency and proper guidance. I feel lighter, fitter, and much more confident now.”
                     </p>
                     <div class="testimonial-author">
-                        <div class="author-avatar">S</div>
+                        <div class="author-avatar">
+                            <img src="IMG_20260218_214438.jpg" alt="Client Raghvi - Fat Loss Transformation"
+                                loading="lazy">
+                        </div>
                         <div class="author-info">
-                            <h4>Sneha Patel</h4>
-                            <span>Strength Training Client</span>
+                            <h4>Raghvi</h4>
+                            <span>Fatloss & Boxing client</span>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card">
                     <div class="testimonial-rating">★★★★★</div>
                     <p class="testimonial-text">
-                        "The personalized attention and scientific approach sets Coach Subham apart. He doesn't just
-                        train you—he educates you. I now understand fitness on a deeper level."
+                        “I never thought I’d enjoy working out until I started boxing with Subham. In a few months, I
+                        dropped weight and built real stamina. More than the physical change, it gave me discipline and
+                        mental toughness. Every session challenges you, but you walk out feeling proud of yourself.”
                     </p>
                     <div class="testimonial-author">
-                        <div class="author-avatar">A</div>
+                        <div class="author-avatar">
+                            <img src="Screenshot_20260218_215526.jpg"
+                                alt="Client Rahul Lohara - Boxing Training Success" loading="lazy">
+                        </div>
                         <div class="author-info">
-                            <h4>Arun Sharma</h4>
-                            <span>Boxing & Fat Loss Client</span>
+                            <h4>Rahul Lohara</h4>
+                            <span>Boxing Client</span>
                         </div>
                     </div>
                 </div>
@@ -424,93 +443,7 @@
         </div>
     </section>
 
-    <!-- Blog Section -->
-    <section class="blog" id="blog">
-        <div class="container">
-            <div class="section-header" data-animate="fade-up">
-                <span class="section-tag">Blog</span>
-                <h2 class="section-title">Fitness <span class="gradient-text">Tips & Insights</span></h2>
-                <p class="section-subtitle">Learn from my experience. Stay updated with the latest fitness knowledge.
-                </p>
-            </div>
-            <div class="blog-grid">
-                <!-- Blog Post 1 -->
-                <article class="blog-card" data-animate="fade-up" data-delay="0">
-                    <div class="blog-image">
-                        <div class="blog-image-placeholder">
-                            <span class="blog-icon">🔥</span>
-                        </div>
-                        <span class="blog-category">Fat Loss</span>
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-meta">
-                            <span class="blog-date">📅 Jan 15, 2025</span>
-                            <span class="blog-read-time">⏱️ 5 min read</span>
-                        </div>
-                        <h3 class="blog-title">5 Fat Loss Mistakes You're Probably Making</h3>
-                        <p class="blog-excerpt">Discover the common pitfalls that prevent most people from losing fat
-                            effectively and how to avoid them.</p>
-                        <a href="blog.html" class="blog-link">
-                            Read More
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M5 12h14M12 5l7 7-7 7" />
-                            </svg>
-                        </a>
-                    </div>
-                </article>
 
-                <!-- Blog Post 2 -->
-                <article class="blog-card" data-animate="fade-up" data-delay="100">
-                    <div class="blog-image">
-                        <div class="blog-image-placeholder">
-                            <span class="blog-icon">🥊</span>
-                        </div>
-                        <span class="blog-category">Boxing</span>
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-meta">
-                            <span class="blog-date">📅 Jan 10, 2025</span>
-                            <span class="blog-read-time">⏱️ 4 min read</span>
-                        </div>
-                        <h3 class="blog-title">Why Boxing is the Ultimate Full-Body Workout</h3>
-                        <p class="blog-excerpt">Boxing isn't just about throwing punches. Learn how it transforms your
-                            entire body and mind.</p>
-                        <a href="blog.html" class="blog-link">
-                            Read More
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M5 12h14M12 5l7 7-7 7" />
-                            </svg>
-                        </a>
-                    </div>
-                </article>
-
-                <!-- Blog Post 3 -->
-                <article class="blog-card" data-animate="fade-up" data-delay="200">
-                    <div class="blog-image">
-                        <div class="blog-image-placeholder">
-                            <span class="blog-icon">💪</span>
-                        </div>
-                        <span class="blog-category">Strength</span>
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-meta">
-                            <span class="blog-date">📅 Jan 5, 2025</span>
-                            <span class="blog-read-time">⏱️ 6 min read</span>
-                        </div>
-                        <h3 class="blog-title">Building Muscle: The Progressive Overload Guide</h3>
-                        <p class="blog-excerpt">Master the fundamental principle that drives all muscle growth. A
-                            complete beginner's guide.</p>
-                        <a href="blog.html" class="blog-link">
-                            Read More
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M5 12h14M12 5l7 7-7 7" />
-                            </svg>
-                        </a>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
 
     <!-- CTA Section -->
     <section class="cta-section">
@@ -574,13 +507,15 @@
                                     d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
                             </svg>
                         </a>
-                        <a href="#" class="social-link" aria-label="YouTube">
+                        <a href="https://youtube.com/@subhambxng3008?si=oGiChe4aEe2IJYrs" target="_blank"
+                            class="social-link" aria-label="YouTube">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path
                                     d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
                             </svg>
                         </a>
-                        <a href="#" class="social-link" aria-label="Facebook">
+                        <a href="https://www.facebook.com/subham.shaw.56829446" target="_blank" class="social-link"
+                            aria-label="Facebook">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path
                                     d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
@@ -646,7 +581,7 @@
                     <a href="#about">About</a>
                     <a href="#services">Services</a>
                     <a href="#gallery">Gallery</a>
-                    <a href="#blog">Blog</a>
+                    <a href="blog.html">Blog</a>
                     <a href="#contact">Contact</a>
                 </div>
             </div>

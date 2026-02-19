@@ -2,17 +2,48 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PLACEHOLDER"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-PLACEHOLDER');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description"
-        content="Coach Subham Blog - Fitness tips, boxing insights, and nutrition advice to help you transform your body and mind.">
+        content="Coach Subham Blog - Expert fitness boxing tips, fat loss insights, and training advice for enthusiasts in Mumbai, Pune, and beyond.">
     <meta name="keywords"
-        content="fitness blog, boxing tips, fat loss advice, strength training articles, coach subham blog">
-    <title>Blog | Coach Subham</title>
+        content="fitness blog mumbai, boxing tips pune, fat loss coach pune, coaching insights mumbai, coach subham blog">
+    <title>Fitness Boxing & Fat Loss Insights | Coach Subham Blog</title>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://coachsubham.com/blog.html">
+    <meta property="og:title" content="Fitness Boxing & Fat Loss Insights | Coach Subham Blog">
+    <meta property="og:description"
+        content="Expert fitness boxing tips and scientific fat loss advice from Coach Subham in Mumbai & Pune.">
+    <meta property="og:image" content="https://coachsubham.com/aN4oEJen5ac4idj6W9SfMS.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://coachsubham.com/blog.html">
+    <meta property="twitter:title" content="Boxing & Fat Loss Coaching Mumbai & Pune | Blog">
+    <meta property="twitter:description"
+        content="Expert fitness boxing tips and scientific fat loss advice from Coach Subham.">
+    <meta property="twitter:image" content="https://coachsubham.com/aN4oEJen5ac4idj6W9SfMS.jpg">
+
+    <link rel="canonical" href="https://coachsubham.com/blog.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet">
+    </noscript>
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥊</text></svg>">
     <link rel="stylesheet" href="style.css">
@@ -39,14 +70,25 @@
 
         .blog-grid-page {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
             padding: 40px 0 80px;
         }
 
         @media (max-width: 768px) {
+            .page-header {
+                padding: 120px 0 60px;
+            }
+
             .blog-grid-page {
                 grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .page-header {
+                padding: 100px 0 40px;
             }
         }
     </style>
