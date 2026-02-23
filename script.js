@@ -210,25 +210,54 @@ function initSmoothScroll() {
    ============================================ */
 function initFormHandler() {
     const form = document.getElementById('contactForm');
+    const submitBtn = form?.querySelector('button[type="submit"]');
 
-    if (form) {
-        form.addEventListener('submit', function (e) {
-            e.preventDefault();
+    if (!form || !submitBtn) return;
 
-            // Get form data
-            const formData = new FormData(form);
-            const data = {};
-            formData.forEach((value, key) => {
-                data[key] = value;
+    form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+
+        // 1. Loading State
+        const originalBtnText = submitBtn.innerHTML;
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<span>⚡ Sending...</span>';
+
+        // 2. Extract Data
+        const formData = new FormData(form);
+
+        try {
+            // 3. Send to actual backend
+            const response = await fetch('submit.php', {
+                method: 'POST',
+                body: formData
             });
 
-            // Show success message (you can integrate with your backend)
-            showFormSuccess();
+            const result = await response.text();
+            console.log("Response from server:", result);
 
-            // Reset form
-            form.reset();
-        });
-    }
+            if (result.includes("successfully")) {
+                // 4. Success UI Feedback
+                submitBtn.style.background = '#22c55e'; // Green
+                submitBtn.innerHTML = '<span>✓ Message Sent!</span>';
+                form.reset();
+            } else {
+                throw new Error(result);
+            }
+
+        } catch (error) {
+            console.error("Submission Error:", error);
+            // 5. Error UI Feedback
+            submitBtn.style.background = '#ef4444'; // Red
+            submitBtn.innerHTML = '<span>✖ Error. Try Again</span>';
+        } finally {
+            // 6. Reset Button after 3 seconds
+            setTimeout(() => {
+                submitBtn.disabled = false;
+                submitBtn.style.background = '';
+                submitBtn.innerHTML = originalBtnText;
+            }, 3000);
+        }
+    });
 }
 
 function showFormSuccess() {
