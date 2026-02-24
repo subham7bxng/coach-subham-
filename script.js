@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
     initCounterAnimation();
     initFormHandler();
     initGalleryNavigation();
+    initVideoLazyLoading();
     initBlogCards();
     initHeroTilt();
     initSmoothScroll();
@@ -503,4 +504,42 @@ function initHeroTilt() {
     heroSection.addEventListener('mouseleave', () => {
         heroImage.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale(1)';
     });
+}
+
+/* ============================================
+   VIDEO LAZY LOADING & PERFORMANCE
+   ============================================ */
+function initVideoLazyLoading() {
+    const videos = document.querySelectorAll('.gallery-video');
+
+    if ('IntersectionObserver' in window) {
+        const videoObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                const video = entry.target;
+                if (entry.isIntersecting) {
+                    // Set preload to auto when it enters viewport
+                    video.preload = 'auto';
+                    video.play().catch(e => {
+                        // Handle auto-play prevention if any
+                        console.log("Video play interrupted:", e);
+                    });
+                } else {
+                    // Pause video when it leaves viewport to save resources
+                    video.pause();
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '200px' // Start loading slightly before it enters
+        });
+
+        videos.forEach(video => {
+            videoObserver.observe(video);
+        });
+    } else {
+        // Fallback for older browsers
+        videos.forEach(video => {
+            video.preload = 'auto';
+        });
+    }
 }
