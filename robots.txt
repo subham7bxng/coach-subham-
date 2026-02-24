@@ -9,7 +9,36 @@ Allow: /
 Disallow: /submit.php
 Disallow: /submissions.txt
 
-# Block bad/scraper bots
+# --- AI Search Engine Bots (Explicitly Allowed) ---
+
+# OpenAI / ChatGPT
+User-agent: GPTBot
+Allow: /
+
+# Anthropic / Claude
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Google AI / Gemini
+User-agent: Google-Extended
+Allow: /
+
+# Meta AI
+User-agent: FacebookBot
+Allow: /
+
+# Common AI crawlers
+User-agent: CCBot
+Allow: /
+
+# --- Block bad/scraper bots ---
 User-agent: AhrefsBot
 Disallow: /
 
