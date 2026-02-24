@@ -1,4 +1,23 @@
+# robots.txt for coachsubham.com
+# Last updated: 2026-02-24
+
+# Allow all good search engine bots
 User-agent: *
 Allow: /
 
+# Block backend/server files from being indexed
+Disallow: /submit.php
+Disallow: /submissions.txt
+
+# Block bad/scraper bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Sitemap location
 Sitemap: https://coachsubham.com/sitemap.xml
